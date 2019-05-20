@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "preps",
+  "info": {
+    "name": "prep",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "preptype": {
+      "model": "preptype",
+      "via": "preps"
+    },
+    "prepingredients": {
+      "collection": "prepingredient",
+      "via": "prep"
+    }
+  }
+}

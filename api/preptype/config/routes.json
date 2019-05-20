@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/preptypes",
+      "handler": "Preptype.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/preptypes/count",
+      "handler": "Preptype.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/preptypes/:id",
+      "handler": "Preptype.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/preptypes",
+      "handler": "Preptype.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/preptypes/:id",
+      "handler": "Preptype.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/preptypes/:id",
+      "handler": "Preptype.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

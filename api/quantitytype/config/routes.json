@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/quantitytypes",
+      "handler": "Quantitytype.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/quantitytypes/count",
+      "handler": "Quantitytype.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/quantitytypes/:id",
+      "handler": "Quantitytype.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/quantitytypes",
+      "handler": "Quantitytype.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/quantitytypes/:id",
+      "handler": "Quantitytype.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/quantitytypes/:id",
+      "handler": "Quantitytype.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
