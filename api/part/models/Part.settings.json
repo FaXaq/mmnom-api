@@ -1,8 +1,8 @@
 {
   "connection": "default",
-  "collectionName": "preps",
+  "collectionName": "parts",
   "info": {
-    "name": "prep",
+    "name": "part",
     "description": ""
   },
   "options": {
@@ -17,14 +17,14 @@
     "description": {
       "type": "text"
     },
-    "category": {
-      "model": "category",
-      "via": "preps"
-    },
-    "parts": {
-      "collection": "part",
-      "via": "preps",
+    "ingredients": {
+      "collection": "ingredient",
+      "via": "parts",
       "dominant": true
+    },
+    "preps": {
+      "collection": "prep",
+      "via": "parts"
     }
   }
 }

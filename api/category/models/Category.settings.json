@@ -1,8 +1,8 @@
 {
   "connection": "default",
-  "collectionName": "ingredients",
+  "collectionName": "categories",
   "info": {
-    "name": "ingredient",
+    "name": "category",
     "description": ""
   },
   "options": {
@@ -14,9 +14,12 @@
     "name": {
       "type": "string"
     },
-    "parts": {
-      "collection": "part",
-      "via": "ingredients"
+    "description": {
+      "type": "text"
+    },
+    "preps": {
+      "collection": "prep",
+      "via": "category"
     }
   }
 }
